@@ -49,7 +49,7 @@ exports[`Feed renders correctly 1`] = `
       className="feed__item-readmore"
       to="/test_0"
     >
-      Read
+      Czytaj
     </Link>
   </div>
   <div
@@ -97,7 +97,7 @@ exports[`Feed renders correctly 1`] = `
       className="feed__item-readmore"
       to="/test_1"
     >
-      Read
+      Czytaj
     </Link>
   </div>
 </div>

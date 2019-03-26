@@ -1,38 +1,43 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  url: 'https://akai.org.pl',
+  title: 'AKAI',
+  subtitle: 'Akademickie Koło Aplikacji Internetowych Politechniki Poznańskiej',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  postsPerPage: 10,
+  googleAnalyticsId: 'UA-109499574-8',
   menu: [
     {
-      label: 'Articles',
+      label: 'Artykuły',
       path: '/'
     },
     {
-      label: 'About me',
-      path: '/pages/about'
+      label: 'Projekty',
+      path: 'https://apps.akai.org.pl'
     },
     {
-      label: 'Contact me',
+      label: 'Hackathony',
+      path: 'https://hackathons.akai.org.pl'
+    },
+    {
+      label: 'Fanpage',
+      path: 'https://www.facebook.com/akai.pp/'
+    },
+    {
+      label: 'Kontakt',
       path: '/pages/contacts'
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'AKAI',
+    photo: '/logo.png',
+    bio: 'Akademickie Koło Aplikacji Internetowych Politechniki Poznańskiej',
     contacts: {
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vkontakte: '#'
+      email: 'kontakt@akai.org.pl',
+      twitter: 'akai_pp',
+      github: 'akai-org'
     }
   }
 };
