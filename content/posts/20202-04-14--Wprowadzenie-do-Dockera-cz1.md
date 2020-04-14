@@ -56,4 +56,6 @@ Na tym zakończymy część pierwszą. W następnej części przedstawimy więce
 kontenerów. Są to podstawy niezbędne do tego aby w przyszłości zaprezentować używanie Dockera z aplikacjami i zapewniania
 im zależności.
 
-> Jeśli masz jakieś uwagi lub sugestie podeślij nam je na adres [kontakt@akai.org.pl](mailto://kontakt@akai.org.pl) lub kontrybuuj do naszego [repozytorium](https://github.com/akai-org/blog).
+*- Dawid Dziedzic*
+
+> Jeśli masz jakieś uwagi lub sugestie podeślij nam je na adres [kontakt@akai.org.pl](mailto:kontakt@akai.org.pl) lub kontrybuuj do naszego [repozytorium](https://github.com/akai-org/blog).
