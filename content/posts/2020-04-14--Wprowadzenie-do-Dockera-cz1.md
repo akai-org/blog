@@ -28,7 +28,9 @@ w formacie .iso jesteśmy w stanie stworzyć maszynę wirtualną, która stanowi
 Bazą obrazu są okrojone wersje systemów operacyjnych, np. Ubuntu. Jest możliwe aby z takiego obrazu utworzyć inne, nowe
 obrazy, kótre zapewniają spełnienie zależności aplikacji. Stworzenie tych obrazów odbywa się przez nałożenie 
 na pierwotny obraz nowych **warstw  (ang. *layers*)**, a więc serii modyfikacji obrazu, które to zapisywane są później jako zmiany tylko 
-do odczytu i które będą składać się na nowy obraz. 
+do odczytu i które będą składać się na nowy obraz. Ostatnia, wierzchnia wartstwa tylko do odczytu jest utworzona na 
+samym wierzchu stosu warstw i jest indywidualna dla każdego kontenera, tj. każdy kontener może niezależnie od innych kontenerów
+z tego samego obrazu dokonywać w niej zmian poprzez np. tworzenie lub edytowanie plików w swoim systemie plików.
 
 Wszystkie oficjalne obrazy a także te, które zbudujemy sami można opublikować w **rejestrze Dockera (ang. *Docker hub*). Serwis ten bardzo
 przypomina znanego każdemu githuba - zawiera on **repozytoria (ang. *repositories*)**, z których każde jest skupione na pojedynczym obrazie i
