@@ -1,6 +1,6 @@
 ---
 title: Wprowadzenie do Dockera, cz. 1
-date: "2020-04-14T16:40:00.169Z"
+date: "2020-04-18T16:40:00.169Z"
 template: "post"
 draft: false
 slug: "/posts/docker1/"
