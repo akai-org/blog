@@ -5,8 +5,8 @@ const postCssPlugins = require('./postcss-config.js');
 
 module.exports = {
   siteMetadata: {
-    url: siteConfig.url,
-    siteUrl: siteConfig.url,
+    url: 'https://akai.org.pl',
+    siteUrl: 'https://akai.org.pl',
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
     copyright: siteConfig.copyright,
