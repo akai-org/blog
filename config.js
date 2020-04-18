@@ -2,6 +2,7 @@
 
 module.exports = {
   url: 'https://akai.org.pl',
+  siteUrl: 'https://blog.akai.org.pl',
   title: 'AKAI',
   subtitle: 'Akademickie Koło Aplikacji Internetowych Politechniki Poznańskiej',
   copyright: '© All rights reserved.',
