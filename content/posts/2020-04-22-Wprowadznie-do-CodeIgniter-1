@@ -4,7 +4,7 @@ date: "2020-04-22T17:00:00.169Z"
 template: "post"
 draft: false
 slug: "/posts/codeigniter1/"
-category: "web-dev"
+category: "back-end"
 tags:
   - "CodeIgniter"
   - "Backend"
