@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do MyBatis'a
+title: Wprowadzenie do frameworku MyBatis
 date: "2020-10-10T12:54:00.169Z"
 template: "post"
 draft: false
@@ -14,11 +14,11 @@ description: "Artykuł wprowadzający do frameworku MyBatis"
 ---
 
 ### Czym jest MyBatis?
-MyBatis jest to framework Javy wykorzystywany do komunikacji z bazą danych. Dzięki niemu można w łatwy i czytelny sposób tworzyć zaawansowane zapytania SQL. MyBatis-Spring to biblioteka pozwalająca na prostą integrację najpopularniejszego frameworku Javy - Springa z MyBatis'em. I to właśnie na połączeniu obu tych frameworków skupimy się w tym artykule
+MyBatis to framework Javy wykorzystywany do komunikacji z bazą danych. Dzięki niemu można w łatwy i czytelny sposób tworzyć zaawansowane zapytania SQL. MyBatis-Spring to biblioteka pozwalająca na prostą integrację najpopularniejszego frameworku Javy - Springa z MyBatisem. I to właśnie na połączeniu obu tych frameworków skupimy się w tym artykule.
 ![mybatis_photo_1](/media/mybatis-logo.jpg)
 
-### Jak dołączyć MyBatis'a do swojego projektu w Springu
-Najprostszym sposobem na dołączenie MyBatis'a do swojego projektu w Springu jest wybranie jego zależności podczas inicjalizacji za pomocą Spring Boot'a. Dzięki temu w naszym projekcie przy użyciu np. Mavena w pliku pom.xml zostaie dodana nastepująca zależność:
+### Jak dołączyć framework MyBatis do swojego projektu w Springu
+Najprostszym sposobem na dołączenie frameworku MyBatis do swojego projektu w Springu jest wybranie jego zależności podczas inicjalizacji za pomocą Spring Boota. Dzięki temu w naszym projekcie przy użyciu np. Mavena w pliku pom.xml zostanie dodana nastepująca zależność:
 
 **pom.xml**
 ```xml
@@ -30,14 +30,14 @@ Najprostszym sposobem na dołączenie MyBatis'a do swojego projektu w Springu je
 ```
 
 
-Następnie w pliku `application.properties` należy dodać odpowiednią właściwość `mybatis.mapper-locations`. Dzięki temu MyBatis będzie wiedział, gdzie szukać plików XML zwanych Mapper'ami, do których będziemy zapisaywać nasze zapytania w języku SQL. 
+Następnie w pliku `application.properties` należy dodać odpowiednią właściwość `mybatis.mapper-locations`. Dzięki temu MyBatis będzie wiedział, gdzie szukać plików XML zwanych Mapperami, do których będziemy zapisaywać nasze zapytania w języku SQL. 
 
 **application.properties**
 ```properties
 mybatis.mapper-locations=classpath*:/mybatis/*Mapper.xml
 ```
 
-### Jak wykorzystać MyBatis'a w projekcie w Springu
+### Jak wykorzystać framework MyBatis w projekcie w Springu
 Zacznijmy od stworzenia prostego obiektu, który będziemy trzymać w bazie danych.
 
 **schema.sql**
@@ -70,7 +70,7 @@ public class Book {
 }
 ```
 
-Teraz należy stworzyć interfejs zwany Mapper'em. Jest on kluczowym plikiem w tym framework'u, gdyż na jego podstawie Spring stworzy Bean, który będzie się komunikował z bazą danych. Może on przyjmować argumenty, które będą następnie wykorzystywane podczas tworzenia zapytania przy pomocy SQLa
+Teraz należy stworzyć interfejs zwany Mapperem. Jest on kluczowym plikiem w tym frameworku, gdyż na jego podstawie Spring stworzy Bean, który będzie się komunikował z bazą danych. Może on przyjmować argumenty, które będą następnie wykorzystywane podczas tworzenia zapytania przy pomocy SQLa.
 
 **BookDaoMapper.java**
 ```java
@@ -94,7 +94,7 @@ public interface BookDaoMapper {
 }
 
 ```
-Teraz należy jeszcze dopisać nasze zapytania SQLa do funkcji stworzonego przez nas Mapper'a w pliku XML. 
+Teraz należy dopisać odpowiedni kod w SQLu do stowroznych wcześniej funkcji Mappera w pliku XML. 
 
 **BookDaoMapper.xml**
 ```xml
@@ -126,11 +126,11 @@ Teraz należy jeszcze dopisać nasze zapytania SQLa do funkcji stworzonego przez
     
 </mapper>
 ```
-Pierwszą rzeczą na którą należy zwrócić uwagę jest `namespace="pl.akai.bookcrossing.list.BookDaoMapper"`. Odpowiada on za połączenie pliku XML z odpowiednim interfejsem. 
-Następnie tworzymy resultMap. Dzięki niej MyBatis wie w jaki sposób ma połączyć ze sobą pola klasy i kolumny otrzymane poprzez zapytanie SQL. `column` odpowiada kolumnie z zapytania, `property` polu w klasie, a `jdbcType` to typ.
-Na samym końcu piszemy swoje zapytania w języku SQL. `id` takiego zapytania odpowiada nazwie metody z interfejsu Mappera, natomiast `resultMap` pozwala na przekształcenie wyniku zapytania na obiekt Javy. Jedną z największych zalet MyBatis'a jest możliwość tworzenia dynamicznych zapytań SQLa, czyli takich, które mają w swoim wnętrzu na przykład instrukcje warunkowe czy pętle. Zainteresowanych zapraszam do dokumentacji, gdzie są przykłady takich zapytań [Zapytania dynamiczne](https://mybatis.org/mybatis-3/dynamic-sql.html)
+Pierwszą rzeczą, na którą należy zwrócić uwagę jest `namespace="pl.akai.bookcrossing.list.BookDaoMapper"`. Odpowiada on za połączenie pliku XML z odpowiednim interfejsem. 
+Następnie tworzymy resultMap. Dzięki niej MyBatis wie, w jaki sposób ma połączyć ze sobą pola klasy i kolumny otrzymane poprzez zapytanie SQL. `column` odpowiada kolumnie z zapytania, `property` polu w klasie, a `jdbcType` to typ.
+Na samym końcu piszemy swoje zapytania w języku SQL. `id` takiego zapytania odpowiada nazwie metody z interfejsu Mappera, natomiast `resultMap` pozwala na przekształcenie wyniku zapytania na obiekt Javy. Jedną z największych zalet MyBatisa jest możliwość tworzenia dynamicznych zapytań SQLa, czyli na przykład takich, które mają w swoim wnętrzu na przykład instrukcje warunkowe czy pętle. Zainteresowanych zapraszam do dokumentacji, gdzie są przykłady takich zapytań [Zapytania dynamiczne](https://mybatis.org/mybatis-3/dynamic-sql.html)
 
-Teraz wystarczy jeszcze napisać reszte naszej aplikacji w Springu:
+Teraz wystarczy jeszcze napisać resztę naszej aplikacji w Springu:
 
 **BookDaoImpl.java**
 ```java
@@ -244,13 +244,13 @@ Dzięki temu otrzymujemy prostą stronę wyświetlającą dane z bazy danych, kt
 
 
 
-### Dlaczego warto korzystać z MyBatis'a?
+### Dlaczego warto korzystać z frameworku MyBatis?
 MyBatis pozwala na uproszczenie kodu potrzebnego do komunikacji z bazą danych. Nie jest może tak popularnym frameworkiem jak Hibernate, ale ma kilka cech przez które warto zwrócić na niego uwagę:
-- duża wydajność - warto zainteresować się tym frameworkiem w przypadku gdy zależy nam szczegónlie na wydajności. MyBatis jest zdecydowanie szybszy niż powszechnie wykorzystywany Hibernate, przy jednoczesnej małej różnicy względem JDBC
-- duża kontrola nad zapytaniami - dzięki MyBatis'owi możemy tworzyć dymaniczne zapytania SQLa. Dzięki temu wywołując tą samą funkcje z innymi argumentami możemy otrzymać zupełnie inne zapytanie SQL
-- prostota - do rozpoczęcia pracy z MyBatis'em potrzebna jest jedynie znajomość SQLa i podstaw Javy
+- duża wydajność - jeżeli zależy nam szczególnie na wydajności, warto zainteresować się frameworkiem MyBatis. Jest zdecydowanie szybszy od powszechnie wykorzystywanego Hibernate'a, a jednocześnie niewiele się różni pod tym względem od JDBC
+- duża kontrola nad zapytaniami - dzięki MyBatisowi możemy tworzyć dynamiczne zapytania SQL. Dzięki temu wywołując tę samą funkcję z innymi argumentami możemy otrzymać zupełnie inne zapytania SQL
+- prostota - do rozpoczęcia pracy z MyBatisem potrzebna jest jedynie znajomość SQLa i podstaw Javy
 
-Chciałbyś/Chciałabyś napisać jakiś projekt w Javie, ale brakuje ci zespołu? A może uważasz, że potrzebujesz więcej doświadczenia w pisaniu aplikacji weebowych? Bez względu na powód, serdecznie zapraszamy do AKAI.
+Chciałbyś/Chciałabyś napisać jakiś projekt w Javie, ale brakuje ci zespołu? A może uważasz, że potrzebujesz więcej doświadczenia w pisaniu aplikacji webowych? Bez względu na powód, serdecznie zapraszamy do AKAI.
 
 
 *- Michał Szczepaniak*
@@ -259,6 +259,6 @@ Chciałbyś/Chciałabyś napisać jakiś projekt w Javie, ale brakuje ci zespoł
 
 **Dodatkowe linki:**
 - [Dokumentacja MyBatis](https://mybatis.org/mybatis-3/index.html)
-- [Dokumentacja MyBatis dla Spirnga](https://mybatis.org/spring/)
+- [Dokumentacja MyBatis dla Springa](https://mybatis.org/spring/)
 
 
