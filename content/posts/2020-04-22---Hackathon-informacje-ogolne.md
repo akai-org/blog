@@ -1,6 +1,6 @@
 ---
 title: Z czym się je Hackathon i dlaczego z pizzą?
-date: "2020-04-22T22:03:00.169Z"
+date: "2020-10-12T21:08:00.169Z"
 template: "post"
 draft: false
 slug: "/posts/hackathon/"
