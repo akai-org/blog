@@ -19,7 +19,7 @@ description: "Część pierwsza z serii artykułów wprowadzających do CodeIgni
 CodeIgniter jest otwartoźródłowym frameworkiem języka PHP który pomaga oraz ułatwia pisanie aplikacji internetowych - jak w każdym frameworku szkielet aplikacji jest już gotowy, a poszczególne warstwy aplikacji można rozdzielać. Obecnie jego najnowsza wersja - 4.0.4 jest stosunkowo młoda - wyszła w lipcu tego roku i wprowadziła dużo zmian - między innymi cały kod został przepisany od nowa. Z tego też powodu migracja aplikacji napisanych w starszych wersjach CodeIgnitera jest uniemożliwiona na najnowszą. Jednak jak zapewniają twórcy migracja aplikacji napisanej w 4.x będzie możliwa na wyższe wersje frameworka. 
 
 ### Wzorzec projektowy MVC 
-CodeIgniter pozwala na budowę aplikacji zgodnie z wzorcem projektowym MVC (ang. *Model, View, Controller*) – Model, Widok, Kontroler.
+CodeIgniter pozwala na budowę aplikacji zgodnie z wzorcem projektowym MVC (eng. *Model, View, Controller*) – Model, Widok, Kontroler.
 **Warstwa modelu** dotyczy logiki aplikacji, zapewnia dostęp do danych np. z bazy danych mysql-a.
 
 **Warstwa widoku** jest odpowiedzialna za obsługę wyświetlania widoku strony dla użytkownika, może być realizowana np. poprzez wygenerowanie odpowiedniego szablonu, zależnie od wyboru czy skorzystamy z dynamicznego sposobu czy statycznego sposobu zarządzania danymi.
