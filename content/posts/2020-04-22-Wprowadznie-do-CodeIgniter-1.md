@@ -1,6 +1,6 @@
 ---
 title: Wprowadzenie do CodeIgniter4, część 1
-date: "2020-04-22T17:00:00.169Z"
+date: "2020-10-15T17:00:00.169Z"
 template: "post"
 draft: false
 slug: "/posts/codeigniter1/"
@@ -15,8 +15,8 @@ description: "Część pierwsza z serii artykułów wprowadzających do CodeIgni
 
 ![CodeIgniter_flame](/media/codeigniter.png)
 
-### Czym jest CodeIgniter
-CodeIgniter jest frameworkiem PHP służącym w budowie aplikacji internetowych a więc zgodnie z założeniami frameworka ułatwia on pisanie aplikacji - szkielet aplikacji jest już gotowy a także umożliwia rozdzielenie jej poszczególnych warstw.
+### Czym jest CodeIgniter 4
+CodeIgniter jest otwartoźródłowym frameworkiem języka PHP który pomaga oraz ułatwia pisanie aplikacji internetowych - jak w każdym frameworku szkielet aplikacji jest już gotowy, a poszczególne warstwy aplikacji można rozdzielać. Obecnie jego najnowsza wersja - 4.0.4 jest stosunkowo młoda - wyszła w lipcu tego roku i wprowadziła dużo zmian - między innymi cały kod został przepisany od nowa. Z tego też powodu migracja aplikacji napisanych w starszych wersjach CodeIgnitera jest uniemożliwiona na najnowszą. Jednak jak zapewniają twórcy migracja aplikacji napisanej w 4.x będzie możliwa na wyższe wersje frameworka. 
 
 ### Wzorzec projektowy MVC 
 CodeIgniter pozwala na budowę aplikacji zgodnie z wzorcem projektowym MVC (ang. *Model, View, Controller*) – Model, Widok, Kontroler.
@@ -34,7 +34,7 @@ CodeIgniter 4 wymaga by na serwerze na którym uruchamiamy naszą aplikację by�
 W tutorialu będę również korzystać z menadżera oprogramowania dla PHP - composera, zalecam używanie najnowszej wersji.
 
 ### Instalacja CodeIgnitera
-Po otwarciu IDE, tworzymy nowy projekt, i w konsoli naszego IDE wpisujemy następujące komendę composera by zainstalować startową aplikację CodeIgnitera:
+Po otwarciu dowolnego IDE bądź w wpisując konsoli systemowej, utworzymy nowy projekt. By zainicjować szkielet naszej aplikacji wystarczy że wpiszemy następującą komendę używając composera:
 
 ```
 composer create-project codeigniter4/appstarter projekt1
@@ -61,7 +61,7 @@ Po instalacji powinieneś w swoim IDE ujrzeć taki szkielet aplikacji:
 
 ![CodeIgniter_skeleton](/media/codeigniter_php_app_skeleton.png)
 
-Pierwszym plikiem którym się zainteresujemy będzie plik konfiguracyjny *env* który znajduje się w głównym katalogu naszej aplikacji. Możemy tutaj zdefiniować m.in. domyślny url naszej aplikacji czy skonfigurować połączenie z bazą.
+Pierwszym plikiem którym się zainteresujemy będzie plik konfiguracyjny zmiennych *env* który znajduje się w głównym katalogu naszej aplikacji. W tym pliku możemy swobodnie dodawać wartości które będziemy wykorzystywać w aplikacji m.in. domyślny url naszej aplikacji czy parametry połączenia z bazą. 
 
 Drugim plikiem ktorym się zainteresujemy jest plik Aplikacji *(App.php)*
 znajduje się on w katalogu **app/Config**.
@@ -71,6 +71,7 @@ Kolejnym plikiem którym się zainteresujemy będzie plik Routingu *(Routes.php)
 W tym pliku możemy definiować ścieżki, które wywołane przez użytkownika w przeglądarce bądź wywołane przez określone zapytania będą przekierowywać odpowiednie kontrolery. Obecnie znajduje się tutaj zdefiniowana ścieżka do domyślnego kontrolera, tak by domyślna strona mogła zadziałać.
 
 Na tym zakończę pierwszą część wprowadzenia do CodeIgnitera, w następnej części przedstawię w jaki sposób możemy podpiąć bazę do naszego projektu, korzystać z niej i przekazywać określone dane pobrane z bazy do widoku.
+
 
 *- Marcin Sylka*
 
