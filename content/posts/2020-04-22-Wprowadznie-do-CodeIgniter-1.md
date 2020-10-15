@@ -21,7 +21,9 @@ CodeIgniter jest otwartoźródłowym frameworkiem języka PHP który pomaga oraz
 ### Wzorzec projektowy MVC 
 CodeIgniter pozwala na budowę aplikacji zgodnie z wzorcem projektowym MVC (ang. *Model, View, Controller*) – Model, Widok, Kontroler.
 **Warstwa modelu** dotyczy logiki aplikacji, zapewnia dostęp do danych np. z bazy danych mysql-a.
+
 **Warstwa widoku** jest odpowiedzialna za obsługę wyświetlania widoku strony dla użytkownika, może być realizowana np. poprzez wygenerowanie odpowiedniego szablonu, zależnie od wyboru czy skorzystamy z dynamicznego sposobu czy statycznego sposobu zarządzania danymi.
+
 **Warstwa kontrolera** jest to warstwa odpowiedzialna za funkcjonowanie aplikacji, przetwarza dane wejściowe użytkownika i odpowiednio reaguje na jego działania np. wywołując akcję, model bądź widok.
 
 ### Wymagania CodeIgnitera
