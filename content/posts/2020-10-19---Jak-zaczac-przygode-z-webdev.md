@@ -60,9 +60,10 @@ W tym roku trafiłem na bardzo dobrą proponowaną ścieżkę nauki.
 Nie zawiera ona wszystkiego, bo nie da się tego spisać, ale jest wskaźnikiem pod jakim
 hasłem znajdziemy następną rzecz do poznania.
 
-Polecam poznać po trochu rzeczy z każdej ścieżki, a potem zdecydować się na to co chcemy robić.
+Polecam poznać po kilka zagadnień z każdej ścieżki, a potem zdecydować się na to co chcemy robić.
+Wiele zagadnień pokrywa się i przeplata, więc zmiana ścieżki także jest możliwa później.
 
-![Web Developer Roadmap Introduction](/media/intro-webdev.png)
+__LINK:__ ![Web Developer Roadmap Introduction](/media/intro-webdev.png)
 
 [Roadmap to becoming a web developer in 2020](https://github.com/kamranahmedse/developer-roadmap)
 
