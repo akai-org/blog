@@ -68,7 +68,7 @@ Polecam poznać po trochu rzeczy z każdej ścieżki, a potem zdecydować się n
 
 
 Każdą znalezioną w internecie rzecz należy ocenić pod kątem aktualności (data napisania, jakiej wersji oprogramowania dotyczy)
-i popularności (istnieją technologie malo popularne w ogóle, ale z aktywną małą społecznością, co czasami powoduje że nie są warte czasu włożonego w ich naukę).
+i popularności (istnieją technologie niezbyt popularne, ale z aktywną małą społecznością, co czasami powoduje że nie są warte czasu włożonego w ich naukę).
 
 
 Miłej lektury!
