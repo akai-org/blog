@@ -31,7 +31,7 @@ wiedzę. Moim pierwszym tworem internetowym był quiz, który przerobiłem z ksi
 skrypt do sprawdzania hasła.
 
 ![505 skryptów dla Webmastera](/media/505web.jpg)
-*Nie znalazłem zdjęcia okładki w lepszej rozdzielczości*
+<center>*Nie znalazłem zdjęcia okładki w lepszej rozdzielczości*</center>
 
 Nie wiedziałem wtedy jeszcze co to pętla, więc kolejne pytania skryptu znajdowały się w osobnych folderach,
 będących kolejnymi kopiami skryptu ze zmienioną treścią ;)
@@ -44,7 +44,7 @@ Niestety po pewnym czasie każdy kolejny bardziej zaawansowany projekt pokazywa�
 że jest jeszcze sporo rzeczy o których nie wiem.
 
 ![Dunning-Kruger effect](/media/dunning-kruger.jpg)
-*O tym można napisać osobny blogpost (via understandinginnvoation.wordpress.com)*
+<center>*O tym można napisać osobny blogpost (via understandinginnvoation.wordpress.com)*</center>
 
 ### Lifelong learning
 
