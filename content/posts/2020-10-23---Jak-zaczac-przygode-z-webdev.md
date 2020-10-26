@@ -1,6 +1,6 @@
 ---
 title: Web development - jak zacząć?
-date: "2020-10-19T17:08:00.169Z"
+date: "2020-10-23T17:08:00.169Z"
 template: "post"
 draft: false
 slug: "/posts/webdev-how-to-begin/"
