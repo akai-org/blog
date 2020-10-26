@@ -31,6 +31,7 @@ wiedzę. Moim pierwszym tworem internetowym był quiz, który przerobiłem z ksi
 skrypt do sprawdzania hasła.
 
 ![505 skryptów dla Webmastera](/media/505web.jpg)
+*Nie znalazłem zdjęcia okładki w lepszej rozdzielczości*
 
 Nie wiedziałem wtedy jeszcze co to pętla, więc kolejne pytania skryptu znajdowały się w osobnych folderach,
 będących kolejnymi kopiami skryptu ze zmienioną treścią ;)
@@ -43,6 +44,7 @@ Niestety po pewnym czasie każdy kolejny bardziej zaawansowany projekt pokazywa�
 że jest jeszcze sporo rzeczy o których nie wiem.
 
 ![Dunning-Kruger effect](/media/dunning-kruger.jpg)
+*O tym można napisać osobny blogpost (via understandinginnvoation.wordpress.com)*
 
 ### Lifelong learning
 
@@ -60,7 +62,7 @@ hasłem znajdziemy następną rzecz do poznania.
 
 Polecam poznać po trochu rzeczy z każdej ścieżki, a potem zdecydować się na to co chcemy robić.
 
-![Web Developer Roadmap Introduction](./img/intro.png)
+![Web Developer Roadmap Introduction](/media/intro-webdev.png)
 
 [Roadmap to becoming a web developer in 2020](https://github.com/kamranahmedse/developer-roadmap)
 
