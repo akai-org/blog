@@ -17,10 +17,10 @@ W tym poradniku przestawiam, jak napisać prostą aplikację do dodawania i usuw
 ---
 
 💡 Zanim przeczytasz upewnij się, że: 
-- 🔗Posiadasz zainstalowany [flutter](https://flutter.dev/docs/get-started/install),
-- 🔗Posiadasz skonfigurowane [IDE](https://flutter.dev/docs/get-started/editor) 
-- 🔗Zapoznałeś się ze składnią języka [Dart](https://learnxinyminutes.com/docs/dart/)
-- 🔗Wykonałeś  [pierwsze kroki](https://flutter.dev/docs/get-started/codelab) we flutterze
+- 🔗 Posiadasz zainstalowany [flutter](https://flutter.dev/docs/get-started/install),
+- 🔗 Posiadasz skonfigurowane [IDE](https://flutter.dev/docs/get-started/editor) 
+- 🔗 Zapoznałeś się ze składnią języka [Dart](https://learnxinyminutes.com/docs/dart/)
+- 🔗 Wykonałeś  [pierwsze kroki](https://flutter.dev/docs/get-started/codelab) we flutterze
 
 ☕ Jeżeli wszystko ogarnięte to kawusia w dłoń i lecimy.
 
@@ -187,7 +187,6 @@ import 'dart:io'; 				    // Diretory
 Stworzymy teraz funkcje do tworzenia, pobierania, aktualizowania i usuwania studentów. Należy też dodać model `Student` do naszego pliku `database.dart` .
 
 1. Pobieranie studentów lub studenta po id
-1. Pobieranie studentów lub studenta po id
 
 ```dart
 
@@ -258,6 +257,7 @@ class DatabaseProvider {
 ```
 
 4. Aktualizowanie studenta po id
+
 ```dart
 // ...
 
@@ -273,7 +273,9 @@ class DatabaseProvider {
   }
 }
 ```
+
 ---
+
 ### 🌟 Krok 6. UI
 
 Nasze bazodanowe API w postaci `DatabaseProvider`  jest już gotowe. Pora wykorzystać je w praktyce! 
