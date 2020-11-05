@@ -184,10 +184,14 @@ import 'dart:io'; 				    // Diretory
 ---
 ### 🚀 Krok 5. CRUD
 
-Stworzymy teraz funkcje do tworzenia, pobierania, aktualizowania i usuwania studentów. Należy też dodać model` Student `do naszego pliku `database.dart` .
+Stworzymy teraz funkcje do tworzenia, pobierania, aktualizowania i usuwania studentów. Należy też dodać model `Student` do naszego pliku `database.dart` .
 
 1. Pobieranie studentów lub studenta po id
+1. Pobieranie studentów lub studenta po id
+
 ```dart
+
+// ...
 // ...
 
 import 'models/StudentModel.dart';
