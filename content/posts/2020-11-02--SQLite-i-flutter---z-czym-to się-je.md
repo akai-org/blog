@@ -12,7 +12,7 @@ tags:
 description: "Tworzenie bazodanowej aplikacji mobilnej krok po kroku z użyciem flutter i SQLite"
 ---
 
-W tym poradniku przestawiam, jak napisać prostą aplikację do dodawania i usuwania studentów za pomocą interfejsu użytkownika w bazie danych. 
+W tym poradniku przedstawiam, jak napisać prostą aplikację do dodawania i usuwania studentów za pomocą interfejsu użytkownika w bazie danych. 
 
 ---
 
@@ -100,8 +100,8 @@ class Student {
   });  
 }
 ```
-To nie koniec. SQLite z naszą aplikacją wymienia się danymi w postaci [Mapy](https://www.tutorialspoint.com/dart_programming/dart_programming_map.htm) . Aby sprawnie przechodzić z instancji klasy na mapę i odwrotnie należy zaimplementować odpowiednie do tego metody.
-Zmapujemy ciąg znaków na dynamiczny typ danych ponieważ posiadamy różne rodzaje danych w modelu `Map<String, dynamic>`.
+To nie koniec. SQLite z naszą aplikacją wymienia się danymi w postaci [Mapy](https://www.tutorialspoint.com/dart_programming/dart_programming_map.htm). Aby sprawnie przechodzić z instancji klasy na mapę i odwrotnie należy zaimplementować odpowiednie do tego metody.
+Zmapujemy ciąg znaków na dynamiczny typ danych, ponieważ posiadamy różne rodzaje danych w modelu `Map<String, dynamic>`.
 
 ```dart
 class Student {  
@@ -131,7 +131,7 @@ Zauważ, że konstruktor klasy Student `fromMap` posiada słowo kluczowe `factor
 ---
 ### 📊 Krok 4. DatabaseProvider
 
-Pora zadbać o inicjalizację naszej bazy danych. Skorzystamy z wzorca [Singleton](https://refactoring.guru/pl/design-patterns/singleton) dzięki któremu obiekt `DatabaseProvider`  będzie jedynym tego rodzaju obiektem w naszej aplikacji. Taką logikę uzyskujemy za pomocą pola `static` instancji klasy oraz  prywatnego konstruktora. Dzięki temu instancja istnieje cały czas a prywatny konstruktor uniemożliwia stworzenia kolejnego obiektu z zewnątrz. 
+Pora zadbać o inicjalizację naszej bazy danych. Skorzystamy z wzorca [Singleton](https://refactoring.guru/pl/design-patterns/singleton) dzięki któremu obiekt `DatabaseProvider`  będzie jedynym tego rodzaju obiektem w naszej aplikacji. Taką logikę uzyskujemy za pomocą pola `static` instancji klasy oraz  prywatnego konstruktora. Dzięki temu instancja istnieje cały czas, a prywatny konstruktor uniemożliwia stworzenia kolejnego obiektu z zewnątrz. 
 
 ```dart
   
@@ -147,7 +147,7 @@ class DatabaseProvider {
 }
 ```
 
-Teraz potrzebujemy funkcji, która będzie zwracała nam połączenie z bazą danych lub tworzyła je jeżeli jeszcze nie zostało ustanowione. 
+Teraz potrzebujemy funkcji, która będzie zwracała nam połączenie z bazą danych lub tworzyła je, jeżeli jeszcze nie zostało ustanowione. 
 
 ```dart
 class DatabaseProvider { 
@@ -313,7 +313,7 @@ class _HomePageState extends State<HomePage> {
 }
 ```
 
-Struktura Widgetów naszej aplikacji aplikacji będzie wyglądała następująco. 
+Struktura Widgetów naszej aplikacji będzie wyglądała następująco. 
 
 ```dart
   @override
