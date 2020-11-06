@@ -1,6 +1,6 @@
 ---
 title: SQLite i flutter - z czym to się je.
-date: "2020-11-02T17:08:00.169Z"
+date: "2020-11-06T20:28:00.169Z"
 template: "post"
 draft: false
 slug: "/posts/sqlite-flutter/"
