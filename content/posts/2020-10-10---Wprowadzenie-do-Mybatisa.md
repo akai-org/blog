@@ -126,6 +126,7 @@ Teraz należy dopisać odpowiedni kod w SQLu do stworzonych wcześniej funkcji M
 </mapper>
 ```
 Pierwszą rzeczą, na którą należy zwrócić uwagę jest `namespace="pl.akai.bookcrossing.list.BookDaoMapper"`. Odpowiada on za połączenie pliku XML z odpowiednim interfejsem. 
+
 Następnie tworzymy resultMap. Dzięki niej MyBatis wie, w jaki sposób ma połączyć ze sobą pola klasy i kolumny otrzymane poprzez zapytanie SQL. `column` odpowiada kolumnie z zapytania, `property` polu w klasie, a `jdbcType` to typ.
 Na samym końcu piszemy swoje zapytania w języku SQL. `id` takiego zapytania odpowiada nazwie metody z interfejsu Mappera, natomiast `resultMap` pozwala na przekształcenie wyniku zapytania na obiekt Javy. Jedną z największych zalet MyBatisa jest możliwość tworzenia dynamicznych zapytań SQLa, czyli na przykład takich, które mają w swoim wnętrzu na przykład instrukcje warunkowe czy pętle. Zainteresowanych zapraszam do dokumentacji, gdzie są przykłady takich zapytań [Zapytania dynamiczne](https://mybatis.org/mybatis-3/dynamic-sql.html)
 
