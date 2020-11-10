@@ -93,7 +93,7 @@ public interface BookDaoMapper {
 }
 
 ```
-Teraz należy dopisać odpowiedni kod w SQLu do stowroznych wcześniej funkcji Mappera w pliku XML. 
+Teraz należy dopisać odpowiedni kod w SQLu do stworzonych wcześniej funkcji Mappera w pliku XML. 
 
 **BookDaoMapper.xml**
 ```xml
