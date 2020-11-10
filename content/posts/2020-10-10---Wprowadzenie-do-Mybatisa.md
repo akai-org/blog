@@ -12,7 +12,7 @@ tags:
   - "Java"
 description: "Artykuł wprowadzający do frameworku MyBatis"
 ---
-
+![mybatis_photo_1](/media/mybatis-logo.jpg)
 ### Czym jest MyBatis?
 MyBatis to framework Javy wykorzystywany do komunikacji z bazą danych. Dzięki niemu można w łatwy i czytelny sposób tworzyć zaawansowane zapytania SQL. MyBatis-Spring to biblioteka pozwalająca na prostą integrację najpopularniejszego frameworku Javy - Springa z MyBatisem. I to właśnie na połączeniu obu tych frameworków skupimy się w tym artykule.
 
@@ -259,4 +259,3 @@ Chciałbyś/Chciałabyś napisać jakiś projekt w Javie, ale brakuje ci zespoł
 **Dodatkowe linki:**
 - [Dokumentacja MyBatis](https://mybatis.org/mybatis-3/index.html)
 - [Dokumentacja MyBatis dla Springa](https://mybatis.org/spring/)
-
