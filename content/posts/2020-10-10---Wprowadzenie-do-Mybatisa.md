@@ -246,7 +246,7 @@ Dzięki temu otrzymujemy prostą stronę wyświetlającą dane z bazy danych, kt
 
 ### Dlaczego warto korzystać z frameworku MyBatis?
 MyBatis pozwala na uproszczenie kodu potrzebnego do komunikacji z bazą danych. Nie jest może tak popularnym frameworkiem jak Hibernate, ale ma kilka cech przez które warto zwrócić na niego uwagę:
-- duża wydajność - jeżeli zależy nam szczególnie na wydajności, warto zainteresować się frameworkiem MyBatis. Jest zdecydowanie szybszy od powszechnie wykorzystywanego Hibernate'a, a jednocześnie niewiele się różni pod tym względem od JDBC
+- **duża wydajność** - jeżeli zależy nam szczególnie na wydajności, warto zainteresować się frameworkiem MyBatis. Jest zdecydowanie szybszy od powszechnie wykorzystywanego Hibernate'a, a jednocześnie niewiele się różni pod tym względem od JDBC
 - duża kontrola nad zapytaniami - dzięki MyBatisowi możemy tworzyć dynamiczne zapytania SQL. Dzięki temu wywołując tę samą funkcję z innymi argumentami możemy otrzymać zupełnie inne zapytania SQL
 - prostota - do rozpoczęcia pracy z MyBatisem potrzebna jest jedynie znajomość SQLa i podstaw Javy
 
