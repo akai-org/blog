@@ -240,6 +240,7 @@ public class ListBookRestController {
 ```
 
 Dzięki temu otrzymujemy prostą stronę wyświetlającą dane z bazy danych, którą można zobaczyć poniżej:
+
 ![mybatis_photo_2](/media/mybatis-web.png)
 
 
