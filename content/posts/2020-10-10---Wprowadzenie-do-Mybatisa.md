@@ -29,7 +29,7 @@ Najprostszym sposobem na dołączenie frameworku MyBatis do swojego projektu w S
 ```
 
 
-Następnie w pliku `application.properties` należy dodać odpowiednią właściwość `mybatis.mapper-locations`. Dzięki temu MyBatis będzie wiedział, gdzie szukać plików XML zwanych Mapperami, do których będziemy zapisaywać nasze zapytania w języku SQL. 
+Następnie w pliku `application.properties` należy dodać odpowiednią właściwość `mybatis.mapper-locations`. Dzięki temu MyBatis będzie wiedział gdzie szukać plików XML zwanych Mapperami, do których będziemy zapisywać nasze zapytania w języku SQL. 
 
 **application.properties**
 ```properties
