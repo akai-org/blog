@@ -132,7 +132,14 @@ Następnie tworzymy resultMap. Dzięki niej MyBatis wie, w jaki sposób ma poł�
 - `column` odpowiada kolumnie z zapytania, 
 - `property` polu w klasie,
 - `jdbcType` to typ.
-Na samym końcu piszemy swoje zapytania w języku SQL. `id` takiego zapytania odpowiada nazwie metody z interfejsu Mappera, natomiast `resultMap` pozwala na przekształcenie wyniku zapytania na obiekt Javy. Jedną z największych zalet MyBatisa jest możliwość tworzenia dynamicznych zapytań SQLa, czyli na przykład takich, które mają w swoim wnętrzu na przykład instrukcje warunkowe czy pętle. Zainteresowanych zapraszam do dokumentacji, gdzie są przykłady takich zapytań [Zapytania dynamiczne](https://mybatis.org/mybatis-3/dynamic-sql.html)
+Na samym końcu piszemy swoje zapytania w języku SQL. 
+
+- `id` takiego zapytania odpowiada nazwie metody z interfejsu Mappera, 
+- `resultMap` pozwala na przekształcenie wyniku zapytania na obiekt Javy. 
+
+Jedną z największych zalet MyBatisa jest możliwość tworzenia dynamicznych zapytań SQLa, czyli na przykład takich, które mają w swoim wnętrzu na przykład instrukcje warunkowe czy pętle. 
+
+Zainteresowanych zapraszam do dokumentacji, gdzie są przykłady takich zapytań [Zapytania dynamiczne](https://mybatis.org/mybatis-3/dynamic-sql.html)
 
 Teraz wystarczy jeszcze napisać resztę naszej aplikacji w Springu:
 
