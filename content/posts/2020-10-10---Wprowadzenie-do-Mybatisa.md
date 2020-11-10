@@ -1,6 +1,6 @@
 ---
 title: Wprowadzenie do frameworku MyBatis
-date: "2020-10-10T12:54:00.169Z"
+date: "2020-11-11T18:54:00.169Z"
 template: "post"
 draft: false
 slug: "/posts/mybatis/"
@@ -69,7 +69,7 @@ public class Book {
 }
 ```
 
-Teraz należy stworzyć interfejs zwany Mapperem. Jest on kluczowym plikiem w tym frameworku, gdyż na jego podstawie Spring stworzy Bean, który będzie się komunikował z bazą danych. Może on przyjmować argumenty, które będą następnie wykorzystywane podczas tworzenia zapytania przy pomocy SQLa.
+Teraz należy stworzyć interfejs zwany Mapperem i dołączyć  do  niego adnotację `@Mapper`. Jest on kluczowym plikiem w tym frameworku, gdyż na jego podstawie Spring stworzy Bean, który będzie się komunikował z bazą danych. Sygnatury metod interfejsu mogą przyjmować argumenty, które będą następnie wykorzystywane podczas tworzenia zapytania przy pomocy SQLa.
 
 **BookDaoMapper.java**
 ```java
@@ -128,20 +128,19 @@ Teraz należy dopisać odpowiedni kod w SQLu do stworzonych wcześniej funkcji M
 Pierwszą rzeczą, na którą należy zwrócić uwagę jest `namespace="pl.akai.bookcrossing.list.BookDaoMapper"`. Odpowiada on za połączenie pliku XML z odpowiednim interfejsem. 
 
 Następnie tworzymy resultMap. Dzięki niej MyBatis wie, w jaki sposób ma połączyć ze sobą pola klasy i kolumny otrzymane poprzez zapytanie SQL. 
+- `column` - odpowiada kolumnie z zapytania, 
+- `property` - polu w klasie,
+- `jdbcType` - to typ.
 
-- `column` odpowiada kolumnie z zapytania, 
-- `property` polu w klasie,
-- `jdbcType` to typ.
 Na samym końcu piszemy swoje zapytania w języku SQL. 
-
-- `id` takiego zapytania odpowiada nazwie metody z interfejsu Mappera, 
-- `resultMap` pozwala na przekształcenie wyniku zapytania na obiekt Javy. 
+- `id` - odpowiada nazwie metody z interfejsu Mappera, 
+- `resultMap` - pozwala na przekształcenie wyniku zapytania na obiekt Javy. 
 
 Jedną z największych zalet MyBatisa jest możliwość tworzenia dynamicznych zapytań SQLa, czyli na przykład takich, które mają w swoim wnętrzu na przykład instrukcje warunkowe czy pętle. 
 
 Zainteresowanych zapraszam do dokumentacji, gdzie są przykłady takich zapytań [Zapytania dynamiczne](https://mybatis.org/mybatis-3/dynamic-sql.html)
 
-Teraz wystarczy jeszcze napisać resztę naszej aplikacji w Springu:
+Teraz gdy mamy stworzony interfejs Mappera oraz odpowiadający mu plik XML możemy zacząć z nich korzystać. W klasie, w której chcemy skomunikować się z bazą danych, musimy za pomocą `@Autowired` wstrzyknąć nasz Mapper. Następnie wystarczy już tylko wywołać interesująca nas metodę interfejsu. Jeśli wszystko poprawnie zrobiliśmy, w ramach wywołania metody wykonane zostanie zadeklarowane zapytanie SQL. Dzięki temu możemy na przykład otrzymać interesujące nas dane lub wstawić nowy rekord do tabeli.
 
 **BookDaoImpl.java**
 ```java
@@ -180,8 +179,9 @@ public class BookDaoImpl implements BookDao {
 }
 
 ```
+Teraz wystarczy jeszcze napisać resztę naszej aplikacji w Springu w celu obsłużenia przychodzących requestów:
 
-**ListBookRestController.java**
+**ListBookController.java**
 ``` java
 package pl.akai.bookcrossing.list;
 
@@ -192,7 +192,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import pl.akai.bookcrossing.model.Book;
 
 @Controller
-public class ListBookRestController {
+public class ListBookController {
 
     private final BookDao bookDao;
 
