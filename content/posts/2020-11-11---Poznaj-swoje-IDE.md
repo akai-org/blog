@@ -3,7 +3,7 @@ title: "Poznaj swoje IDE - JetBrains"
 date: "2020-11-11T18:54:00.169Z"
 template: "post"
 draft: false
-slug: "/posts/mybatis/"
+slug: "/posts/jetbrains/"
 category: "Programowanie"
 tags:
   - "Programowanie"
