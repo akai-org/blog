@@ -15,7 +15,7 @@ description: "Część druga z serii artykułów wprowadzających do Dockera"
 
 ### Uruchamianie kontenerów Dockera
 W [poprzedniej części](/posts/docker1/) pisałem o podstawowych pojęciach w Dockerze i poznaliśmy pierwsze polecenie
-pozwalające na zobaczenie działania Dockera w praktyce. W tym wpisie skupię się na uruchamianiu kontenerów oraz opcjach,
+pozwalające zobaczyć działanie Dockera w praktyce. W tym wpisie skupię się na uruchamianiu kontenerów oraz opcjach,
 jakie mamy do dyspozycji w trakcie ich uruchamiania.
 
 ### Tryb interaktywny
@@ -41,7 +41,7 @@ po uruchomieniu się. Możemy jednak sprawdzić działanie opcji `-d` na kontene
 ```
 docker run -d redis
 ```
-a następnie wylistujemy wszystkie uruchomione kontenery poleceniem 
+a następnie wylistujemy wszystkie uruchomione kontenery poleceniem: 
 ```
 docker ps
 ```
@@ -50,13 +50,13 @@ to zobaczymy, że nasz redis działa i ma się dobrze. Pozostanie tak, dopóki s
 ### Zarządzanie kontenerami i obrazami
 Mamy możliwość zarządzania kontenerami oraz obrazami obecnymi na naszym komputerze za pomocą serii poleceń:
 - Aby wylistować wszystkie *uruchomione* kontenery używamy komendy: `docker ps`.
-- Aby wylistować *wszystkie* kontenery używamy komendy: `docker ps -a`. Jest to lista wszystkich kontenerów jakie zostały 
+- Aby wylistować *wszystkie* kontenery używamy komendy: `docker ps -a`. Jest to lista wszystkich kontenerów, jakie zostały 
 uruchomione oraz zatrzymane.
 - Aby zatrzymać działający kontener, używamy komendy: `docker stop <NAZWA_LUB_ID_KONTENERA>`. Nazwę lub ID kontenera pozyskujemy
-przez polecenie `docker ps`. Pojawiają się one w pierwszej i ostatniej kolumnie. Nazwę możemy też nadać sami o czym więcej 
+przez polecenie `docker ps`. Pojawiają się one w pierwszej i ostatniej kolumnie. Nazwę możemy też nadać sami, o czym więcej 
 za chwilę.
 - Aby usunąć *zatrzymany* kontener używamy komendy: `docker rm <NAZWA_LUB_ID_KONTENERA>`. Powoduje to usunięcie kontenera
-i wszystkich zmian które zostały w nim dokonane (z wyjątkiem edycji wolumenów, o czym więcej za chwilę)
+i wszystkich zmian, które zostały w nim dokonane (z wyjątkiem edycji wolumenów, o czym więcej za chwilę)
 - Aby wylistować wszystkie pobrane i zbudowane obrazy dostępne na naszym komputerze używamy komendy: `docker images`.
 - Aby usunąć obraz, na podstawie którego nie jest zbudowany żaden kontener używamy komendy: `docker rmi <NAZWA_LUB_ID_OBRAZU>`
 
@@ -67,7 +67,7 @@ to wymaga on od nas podania jednej z trzech zmiennych środowiskowych. My podamy
 docker run -d -e MYSQL_ROOT_PASSWORD=pass mysql
 ```
 Do zmiennej środowiskowej kontener może uzyskać dostęp w taki sam sposób, w jaki uzyskiwałby go Linux w formie zwyczajnego, 
-tradycyjnego systemu. MySQL używa podanej zmiennej środowiskowej, aby zasetupować hasło dla roota do bazy danych. 
+tradycyjnego systemu. MySQL używa podanej zmiennej środowiskowej, aby ustawić hasło dla roota do bazy danych. 
 
 ### Uruchamianie kontenera z własną nazwą
 Kontenery możemy nazwać. Służy temu opcja `--name`:
@@ -105,7 +105,7 @@ wewnątrz kontenera Dockera. W tym celu wykonujemy polecenie:
 ```
 docker run -ti -v /home/tutorial/notatki:/notatki ubuntu
 ```
-W kontenerze pojawia nam się katalog `/notatki` który jest zlinkowany do katalogu `/home/tutorial/notatki` hosta. Zmiany
+W kontenerze pojawia nam się katalog `/notatki`, który jest zlinkowany do katalogu `/home/tutorial/notatki` hosta. Zmiany
 dokonane tutaj przez kontener zostaną zapisane w systemie plików hosta a zmiany dokonane przez hosta lub inny kontener 
 w katalogu `/home/tutorial/notatki` będą widoczne w tym kontenerze. Opcję `-v` używamy w sposób następujący:
 ```
@@ -124,7 +124,7 @@ tworzenie własnych obrazów Dockera przy pomocy pliku Dockerfile.
 
 #### Źródła
 * [Docker Hub](https://hub.docker.com/)
-* [Docker. Projektowanie i wdrażanie aplikacji, Jaroslaw Krochmalski](https://helion.pl/ksiazki/docker-projektowanie-i-wdrazanie-aplikacji-jaroslaw-krochmalski,docpro.htm#format/d)
+* [Docker. Projektowanie i wdrażanie aplikacji, Jarosław Krochmalski](https://helion.pl/ksiazki/docker-projektowanie-i-wdrazanie-aplikacji-jaroslaw-krochmalski,docpro.htm#format/d)
 
 *- Dawid Dziedzic*
 
