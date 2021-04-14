@@ -1,6 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import moment from 'moment';
 import Post from './Post';
+import 'moment/locale/pl';
+
+moment.locale('pl');
 
 describe('Post', () => {
   const props = {

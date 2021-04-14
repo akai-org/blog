@@ -1,6 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import moment from 'moment';
 import PostTemplate from './post-template';
+import 'moment/locale/pl';
+
+moment.locale('pl');
 
 describe('PostTemplate', () => {
   const props = {
