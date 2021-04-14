@@ -1,5 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import styles from './Page.module.scss';
+import moment from 'moment';
+import 'moment/locale/pl';
+
+moment.locale("pl");
 
 const Page = ({ title, children }) => {
   const pageRef = useRef();
