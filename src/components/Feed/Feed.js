@@ -1,6 +1,5 @@
 import React from 'react';
 import moment from 'moment';
-import 'moment/locale/pl';
 import { Link } from 'gatsby';
 import styles from './Feed.module.scss';
 
@@ -9,8 +8,8 @@ const Feed = ({ edges }) => (
     {edges.map((edge) => (
       <div className={styles['feed__item']} key={edge.node.fields.slug}>
         <div className={styles['feed__item-meta']}>
-          <time className={styles['feed__item-meta-time']} dateTime={moment(edge.node.frontmatter.date).locale('pl').format('MMMM D, YYYY')}>
-            {moment(edge.node.frontmatter.date).locale('pl').format('MMMM YYYY')}
+          <time className={styles['feed__item-meta-time']} dateTime={moment(edge.node.frontmatter.date).format('MMMM D, YYYY')}>
+            {moment(edge.node.frontmatter.date).format('MMMM YYYY')}
           </time>
           <span className={styles['feed__item-meta-divider']} />
           <span className={styles['feed__item-meta-category']}>
