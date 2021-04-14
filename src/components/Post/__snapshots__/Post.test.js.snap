@@ -8,7 +8,7 @@ exports[`Post renders correctly 1`] = `
     className="post__home-button"
     to="/"
   >
-    All Articles
+    Powrót
   </Link>
   <div
     className="post__content"
@@ -40,8 +40,8 @@ exports[`Post renders correctly 1`] = `
       <p
         className="meta__date"
       >
-        Published 
-        1 Sep 2016
+        Opublikowano 
+        1 września 2016
       </p>
     </div>
     <div

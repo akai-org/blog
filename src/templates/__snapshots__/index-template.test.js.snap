@@ -27,9 +27,9 @@ exports[`IndexTemplate renders correctly 1`] = `
             >
               <time
                 className="feed__item-meta-time"
-                dateTime="September 1, 2016"
+                dateTime="wrzesień 1, 2016"
               >
-                September 2016
+                wrzesień 2016
               </time>
               <span
                 className="feed__item-meta-divider"
@@ -75,9 +75,9 @@ exports[`IndexTemplate renders correctly 1`] = `
             >
               <time
                 className="feed__item-meta-time"
-                dateTime="September 1, 2016"
+                dateTime="wrzesień 1, 2016"
               >
-                September 2016
+                wrzesień 2016
               </time>
               <span
                 className="feed__item-meta-divider"
@@ -127,7 +127,7 @@ exports[`IndexTemplate renders correctly 1`] = `
               rel="prev"
               to="/page/1"
             >
-              ← PREV
+              ← POPRZEDNIA
             </Link>
           </div>
           <div
@@ -138,7 +138,7 @@ exports[`IndexTemplate renders correctly 1`] = `
               rel="next"
               to="/page/3"
             >
-              → NEXT
+              NASTĘPNA →
             </Link>
           </div>
         </div>
