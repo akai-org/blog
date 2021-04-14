@@ -5,7 +5,7 @@ module.exports = {
   siteUrl: 'https://blog.akai.org.pl',
   title: 'AKAI',
   subtitle: 'Akademickie Koło Aplikacji Internetowych Politechniki Poznańskiej',
-  copyright: '© All rights reserved.',
+  copyright: '© Wszelkie prawa zastrzeżone.',
   disqusShortname: '',
   postsPerPage: 10,
   googleAnalyticsId: 'UA-109499574-8',
