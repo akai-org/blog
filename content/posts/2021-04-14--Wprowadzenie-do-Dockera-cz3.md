@@ -75,16 +75,16 @@ Skupmy się teraz na różnicach między nimi:
 - `ENTRYPOINT` - służy do wskazania entrypointu, czyli programu/polecenia, które zostanie wykonany w momencie startu
   kontenera. W przeciwieństwie do `RUN`, tylko jej ostatnie wystąpienie ma wpływ na obraz i kontener. Ważnym
   zapamiętania, że domyślnym entrypointem jest `/bin/sh -c`.
-- `CMD` - z definicji komenda ta służy do przekazywania argumentów domyślnych do entrypointa. Podobnie jak `ENTRYPOINT`
+- `CMD` - według definicji komenda ta służy do przekazywania argumentów domyślnych do entrypointa. Podobnie do `ENTRYPOINT`
   tylko jej ostatnie wystąpienie ma wpływ na obraz.
 
 
 Wygląda więc, że komenda `CMD` nie powinna mieć dużo wspólnego z `RUN` oraz `ENTRYPOINT`. Dlaczego więc ma tak jak one 
-*shell form* oraz *exec form*? Dzieje się tak, dlatego że domyślnym entrypointem jest `/bin/sh -c`. Domyślnym argumentem
+*shell form* oraz *exec form*? Dzieje się tak, ponieważ domyślnym entrypointem jest `/bin/sh -c`. Domyślnym argumentem
 może być więc zatem program lub komenda wywołana za pomocą shella!
 Dlatego też zamiast: `ENTRYPOINT npm start` możemy użyć `CMD npm start` i otrzymać taki sam rezultat. Różnica jest taka,
 że korzystając z drugiej opcji, możemy nadpisać jej wywołanie podczas uruchomienia kontenera. Przykładowo, jeśli
-korzystamy z domyślnego entrypointa oraz `CMD npm start`, a kontener uruchommy za pomocą
+korzystamy z domyślnego entrypointa oraz `CMD npm start`, a kontener uruchomimy za pomocą
 `docker run -p 3000:3000 react-app echo "Hello World!"` to nie uruchomimy naszej aplikacji, lecz wyświetlimy napis "Hello World!".
 Czegoś takiego nie zrobimy korzystając z `ENTRYPOINT`. Z tego powodu, jeśli chcemy by nasz obraz miał
 konkretne zastosowanie powinniśmy korzystać z `ENTRYPOINT`, natomiast z `CMD` do bardziej ogólnych zastosowań, gdy
