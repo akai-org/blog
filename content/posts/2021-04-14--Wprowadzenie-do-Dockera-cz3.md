@@ -42,7 +42,7 @@ podstawowym operacjom:
   on utworzony.
 - `COPY <SRC> <DEST>` - jest komendą wykorzystywaną do kopiowania plików z komputera do tworzonego obrazu.
   Wykorzystujemy ją np. do kopiowania plików źródłowych naszej aplikacji.
-- `ADD <SRC> <DEST>` - jest komendą podobną do `COPY`. Za jej pomocą take możemy kopiować pliki z komputera, do obrazu.
+- `ADD <SRC> <DEST>` - jest komendą podobną do `COPY`. Za jej pomocą także możemy kopiować pliki z komputera, do obrazu.
   Jednakże jako argument `<SRC>` nie musimy podać pliku z naszego komputera. W jego miejscu możemy podać na przykład
   URL, a podczas budowy obrazu Docker pobierze zasoby spod podanego linku. Ponadto, jeśli przez argument `<SRC>`
   przekażemy skompresowany plik, zostanie on rozpakowany.
@@ -73,7 +73,7 @@ Skupmy się teraz na różnicach między nimi:
   potrzebne do uruchomienia aplikacji. Dzięki temu są one pobierane tylko podczas budowy obrazu, a nie przy każdym
   uruchomieniu kontenera.
 - `ENTRYPOINT` - służy do wskazania entrypointu, czyli programu/polecenia, które zostanie wykonany w momencie startu
-  kontenera. W przeciwieństwie do `RUN`, tylko jej ostatnie wystąpienie ma wpływ na obraz i kontener. Ważnym
+  kontenera. W przeciwieństwie do `RUN` tylko jej ostatnie wystąpienie ma wpływ na obraz i kontener. Ważnym
   zapamiętania, że domyślnym entrypointem jest `/bin/sh -c`.
 - `CMD` - według definicji komenda ta służy do przekazywania argumentów domyślnych do entrypointa. Podobnie do `ENTRYPOINT`
   tylko jej ostatnie wystąpienie ma wpływ na obraz.
@@ -86,7 +86,7 @@ Dlatego też zamiast: `ENTRYPOINT npm start` możemy użyć `CMD npm start` i ot
 że korzystając z drugiej opcji, możemy nadpisać jej wywołanie podczas uruchomienia kontenera. Przykładowo, jeśli
 korzystamy z domyślnego entrypointa oraz `CMD npm start`, a kontener uruchomimy za pomocą
 `docker run -p 3000:3000 react-app echo "Hello World!"` to nie uruchomimy naszej aplikacji, lecz wyświetlimy napis "Hello World!".
-Czegoś takiego nie zrobimy korzystając z `ENTRYPOINT`. Z tego powodu, jeśli chcemy by nasz obraz miał
+Czegoś takiego nie zrobimy korzystając z `ENTRYPOINT`. Z tego powodu, jeśli chcemy, aby nasz obraz miał
 konkretne zastosowanie powinniśmy korzystać z `ENTRYPOINT`, natomiast z `CMD` do bardziej ogólnych zastosowań, gdy
 chcemy pozwolić użytkownikowi do zmiany zachowania.
 
@@ -114,10 +114,10 @@ entrypoint, czyli komenda, która uruchomi się w momencie uruchomienia kontener
 Przygotowany w ten sposób plik możemy zmienić w obraz za pomocą polecenia:
 
 ```
-docker build -t <NAZWA_OBRZAU> <PATH>
+docker build -t <NAZWA_OBRAZU> <PATH>
 ```
 
-Możemy zatem na przykład wywołać następujące polecenie:
+Możemy na przykład wywołać następujące polecenie:
 
 ```
 docker build -t react-app .
