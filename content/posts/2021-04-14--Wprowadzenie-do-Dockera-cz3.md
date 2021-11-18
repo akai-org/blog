@@ -1,6 +1,6 @@
 ---
 title: Wprowadzenie do Dockera, cz. 3 
-date: "2021-11-15"
+date: "2021-11-19"
 template: "post"
 draft: false 
 slug: "/posts/docker3/"
