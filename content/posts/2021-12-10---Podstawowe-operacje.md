@@ -13,7 +13,7 @@ description: "Wstęp do podstawowych operacji w Javie"
 ![logo](/media/banner-java.png)
 
 ## Wstęp
-Język Java, jak każdy inny język programowania posiada pewne podstawowe narzędzia bez których pisanie kodu było by niemożliwe. Każdy początkujący programista musi nauczyć się kilku podstawowych mechanik dostępnych w każdym języku programowania. Są to **zmienne**, **pętle** oraz **instrukcje warunkowe**. W tym poście postaramy się omówić te trzy filary programowania na przykładzie Javy. Warto zaznaczyć, że narzędzia te są tak uniwersalne i wszechstronne, że zrozumienie ich na przykładzie Javy pozwoli Ci zastosować je w każdym innym języku.
+Java, jak każdy inny język programowania posiada pewne podstawowe narzędzia bez których pisanie kodu byłoby niemożliwe. Każdy początkujący programista musi nauczyć się kilku podstawowych mechanik dostępnych w każdym języku programowania. Są to **zmienne**, **pętle** oraz **instrukcje warunkowe**. W tym poście postaramy się omówić te trzy filary programowania na przykładzie Javy. Warto zaznaczyć, że narzędzia te są tak uniwersalne i wszechstronne, że zrozumienie ich na przykładzie Javy pozwoli Ci zastosować je w każdym innym języku.
 
 ### Zmienne i typy
 Zapewne każdy kto kiedyś rozpoczął przygodę z programowaniem chociaż raz usłyszał, że "zmienna jest jak pojemnik do którego zapisujemy dane". Jakkolwiek oklepane to by nie było - jest w tym wiele racji.  
@@ -84,11 +84,11 @@ int primitiveInt = Integer.valueOf(10);
 ```
 
 ### Pętle
-Pętle to kolejny mechanizm bez którego tworzenie oprogramowania było by nie możliwe. Pozwalają na wykonywanie tej samej części kodu wielokrotnie. Każde wykonanie kodu w ciele pętli i powrót do jej początku nazywamy iteracją pętli. Programista może z góry podać liczbę iteracji lub wykorzystać warunek logiczny aby określić, kiedy pętla powinna się zatrzymać.  
+Pętle to kolejny mechanizm bez którego tworzenie oprogramowania byłoby niemożliwe. Pozwalają na wykonywanie tej samej części kodu wielokrotnie. Każde wykonanie kodu w ciele pętli i powrót do jej początku nazywamy iteracją pętli. Programista może z góry podać liczbę iteracji lub wykorzystać warunek logiczny aby określić, kiedy pętla powinna się zatrzymać.  
 W wielu językach programowania pętle wyglądają bardzo podobnie, wręcz identycznie. Dziś przyjrzymy się trzem rodzajom pętli, na które na pewno natkniesz lub natknąłeś/aś się podczas nauki programowania. Nie tylko w Javie :).
 
 #### Pętla `for`
-Wspomniałem wcześniej, że programista może z góry założyć ilczbę iteracji pętli. `For` jest w tym przypadku nieoceniony. Deklaracja pętli `for` składa się z trzech części:
+Wspomniałem wcześniej, że programista może z góry założyć liczbę iteracji pętli. `For` jest w tym przypadku nieoceniony. Deklaracja pętli `for` składa się z trzech części:
 ```java
 for (operacja1; operacja2; operacja3) {
   // ciało pętli
@@ -97,7 +97,7 @@ for (operacja1; operacja2; operacja3) {
 Po krótce przyjrzyjmy się tym częściom:
 - *operacja1* - jest to kawałek kodu wykonywany na początku działania pętli, najczęściej definiujemy w nim *iterator* - specjalną zmienną służącą do liczenia iteracji pętli.
 - *operacja2* - w tym miejscu deklarujemy warunek logiczny dzięki któremu opuścimy pętlę. Najczęściej jest to porównanie naszego *iteratora* do jakiejś zadanej wartości
-- *operacja3* - kawałek kodu wykonywany za każdą iteracją pętli. W tym miejscu możemy określić jak ma zmieniać się nasz *iterator* (na przykład zwiększać lub zmniejszać o jeden).  
+- *operacja3* - kawałek kodu wykonywany po każdej iteracji pętli. W tym miejscu możemy określić jak ma zmieniać się nasz *iterator* (na przykład zwiększać lub zmniejszać o jeden).  
 
 Przykład działania pętli for - program wypisujący na konsolę kolejne cyfry od 0 do 4:
 ```java
@@ -131,7 +131,7 @@ for (typZmiennej nazwaZmiennej : nazwaTablicy) {
 ```
 - *typZmiennej* jest typem elementów jakie występują w tablicy o nazwie *nazwaTablicy*. Jeżeli podajemy do pętli tablicę liczb naturalnych (`int`) to *typZmiennej* również musi wskazywać na `int`.  
 - *nazwaZmiennej* wskazuje zmienną do której zapisywane będą kolejne elementy tablicy *nazwaTablicy*.
-- *nazwaTablicy* wskazuje tablicę z której kolejno odczytane elementy będą zapisane w zmiennej *nazwaZmiennej*.  
+- *nazwaTablicy* wskazuje obiekt będący tablicą lub impementujący interfejs `Iterable` z którego kolejno odczytane elementy będą zapisane w zmiennej *nazwaZmiennej*.  
 
 Przykład użycia prezentuje się następująco:
 ```java
@@ -182,7 +182,7 @@ while (true) {
 ```
 #### Pętla `do-while`
 
-Pętla `do-while` jest bardzo podobna do pętli `while` z tą różnicą, że warunek wyjścia z pętli sprawdzany jest **po** wykonaniu ciała funkcji. Deklaracja zmiennej rozpoczyna się od słowa `do`, następnie podajemy ciało funkcji w klamrach, a na samym końcu instrukcje `while` z warunkiem.
+Pętla `do-while` jest bardzo podobna do pętli `while` z tą różnicą, że warunek wyjścia z pętli sprawdzany jest **po** wykonaniu ciała pętli. Gwarantuje to nam, że ciało pętli zostanie wykonane przynajmniej jeden raz. Deklaracja zmiennej rozpoczyna się od słowa `do`, następnie podajemy ciało pętli w klamrach, a na samym końcu instrukcje `while` z warunkiem.
 ```java
 do {
   // ciało funkcji
@@ -203,7 +203,7 @@ do {
 } while (true);
 ```
 ### Instrukcje warunkowe
-Instrukcje warunkowe pozwalają nam na spawdzanie reguł logicznych i wykonywanie odpowiednich instrukcji w zależności od tego czy dana reguła jest prawdziwa czy nie. W skrócie moglibysmy określić ich działanie w ten sposób: *Jeżeli zaszło A to wykonaj B. W przeciwnym przypadku wykonaj C*.  
+Instrukcje warunkowe pozwalają nam na spawdzanie reguł logicznych i wykonywanie odpowiednich instrukcji w zależności od tego czy dana reguła jest prawdziwa czy nie. W skrócie moglibyśmy określić ich działanie w ten sposób: *Jeżeli zaszło A to wykonaj B. W przeciwnym przypadku wykonaj C*.  
 W języku java wyróżniamy kilka operatorów służących porównywaniu wartości. Bywają one bardzo przydatne przy deklarowaniu warunków logicznych:
 - `a == b` - `a` jest równe `b`
 - `a != b` - `a` jest różne od `b`
@@ -311,6 +311,9 @@ Wyjście programu:
 ```
 Czwartek
 ```
+
+## Podsumowanie
+W tym poradniku to by było na tyle. Uzbrojony/na w powyższą wiedzę powinieneś/powinnaś bez problemu stawiać czoła dalszym programistycznym wyzwaniom jakie czekają na Twojej drodze. Mam nadzieję, że dzięki temu poradnikowi, Java oraz pozostałe języki programowania choć trochę stały się dla Ciebie bardziej przyjazne. Więcej poradników już w krótce. Do zobaczenia!
 
 #### Źródła
 https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html  
