@@ -18,7 +18,7 @@ Większość początkujących programistów Javy napotyka na swojej drodze róż
 mogą wpaść w jedną z typowych pułapek kryjących się w Javie. W tym poście poznasz je i zrozumiesz ich istotę, aby w przyszłości takich błędów nie popełnić.
 
 ## Boolean vs boolean
-Pierwszą popularną pułapką jest popularny **boolean**, czy też **Boolean**. Jeżeli przyswoiłeś już podstawy programowania, z pewnością wiesz, że boolean jest typem logicznym 
+Pierwszą popularną pułapką jest popularny `boolean`, czy też `Boolean`. Jeżeli przyswoiłeś już podstawy programowania, z pewnością wiesz, że boolean jest typem logicznym 
 (inaczej – boolowskim), którego zmienne mogą przyjmować wartość prawdy (oznaczanej 1 lub true) lub fałszu (analogicznie 0 lub false). 
 
 Różnica w zapisie jest jednak istotna. Boolean jest obiektem, a boolean typem prymitywnym. Największą różnicę pomiędzy nimi znajdziemy w pamięci, które zajmują. 
