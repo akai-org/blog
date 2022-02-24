@@ -53,7 +53,7 @@ jeżeli nie będzie to potrzebne, warto pozostać przy prymitywnym typie int, kt
 ## String pool i jego konsekwencje
 
 **String pool** jest wydzielonym fragmentem pamięci, do którego trafiają obiekty typu String utworzone za pomocą operatora `new`. 
-Wpływa on korzystanie na zużycie pamięci i przyspiesza porównywanie stringów. Trzeba jednak uważać porównując obiekty typu String, ponieważ łatwo można wpaść w pułapkę.
+Wpływa on korzystanie na zużycie pamięci i przyspiesza porównywanie stringów. Trzeba jednak uważać porównując obiekty typu `String`, ponieważ łatwo można wpaść w pułapkę.
 
 Przeanalizujmy poniższy fragment kodu:
 
