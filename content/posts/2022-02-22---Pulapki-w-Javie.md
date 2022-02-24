@@ -79,7 +79,7 @@ true
 true
 ```
 
-Jak widać, Stringi test11 oraz test22, które zostały utworzone przez operator new zwracają nieprawidłowy wynik, gdy są porównywane za pomocą operatora `==`. Spowodowane jest 
+Jak widać, Stringi `test11` oraz `test22`, które zostały utworzone przez operator new zwracają nieprawidłowy wynik, gdy są porównywane za pomocą operatora `==`. Spowodowane jest 
 to faktem, że operator `==` porównuje różne adresy.
 
 ## Podsumowanie
