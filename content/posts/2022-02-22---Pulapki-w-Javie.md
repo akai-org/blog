@@ -31,7 +31,7 @@ Wyjątkiem są sytuacje, gdy chcemy skorzystać z metod klasy Boolean.
 
 ## Integer vs int
 Kolejną pułapką są nazwy popularnych zmiennych liczbowych. Integer (int) jest typem zmiennej całkowitoliczbowej. Różnica w zapisie jest analogiczna jak w przypadku 
-Boolean vs boolean – **Integer** jest obiektem, natomiast **int** typem prymitywnym.
+Boolean vs boolean – `Integer` jest obiektem, natomiast `int` typem prymitywnym.
 
 W tym przypadku, kwestia wyboru typu zmiennej również opiera się na kompromisie pomiędzy ilością zajmowanej pamięci, a metodami wbudowanymi. Obiekt Integer wyposażony jest w 
 różne metody pomagające przechowywać i konwertować dane. Jeżeli chcesz skorzystać z metody takiej jak na przykład parseInt, musisz zadeklarować typ zmiennej Integer. Natomiast, 
