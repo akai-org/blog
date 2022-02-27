@@ -29,7 +29,7 @@ Z uwagi na to, że zazwyczaj ze zmiennej logicznej korzystamy w prostych celach,
 ## Integer vs int
 Kolejną pułapką są nazwy popularnych zmiennych liczbowych. Integer (int) jest typem zmiennej całkowitoliczbowej. Różnica w zapisie jest analogiczna jak w przypadku `Boolean` vs `boolean` – `Integer` jest obiektem, natomiast `int` typem prymitywnym.
 
-W tym przypadku, kwestia wyboru typu zmiennej również opiera się na kompromisie pomiędzy ilością zajmowanej pamięci, a metodami wbudowanymi. Obiekt Integer wyposażony jest w różne metody pomagające przechowywać i konwertować dane. Jeżeli chcesz skorzystać z metody takiej jak na przykład `parseInt`, musisz zadeklarować typ zmiennej `Integer`. Natomiast, jeżeli nie będzie to potrzebne, warto pozostać przy prymitywnym typie int, który pozwoli zaoszczędzić pamięć.
+W tym przypadku, kwestia wyboru typu zmiennej również opiera się na kompromisie pomiędzy ilością zajmowanej pamięci, a metodami wbudowanymi. Obiekt `Integer` wyposażony jest w różne metody pomagające przechowywać i konwertować dane. Jeżeli chcesz skorzystać z metody takiej jak na przykład `parseInt`, musisz zadeklarować typ zmiennej jako `Integer`. Ponadto, jeśli chcesz korzystać z klas generycznych, muszą one korzystać z klas. Dlatego też, gdy, na przykład, tworzymy listę przechowującą wartości całkowitoliczbowe można utworzyć obiekt o typie `List<Integer>`, ale nie można `List<int>`. Natomiast, jeżeli nie będzie to potrzebne, warto pozostać przy prymitywnym typie `int`, który pozwoli zaoszczędzić pamięć oraz pozwoli uniknać problemów z porównaniami.
 
 W zależności od wyboru typu zmiennej Integer bądź int, należy rozważnie decydować o metodzie porównywania zmiennych danego typu. Przeanalizujmy następujący przykład:
 
