@@ -23,7 +23,7 @@ Pierwszą popularną pułapką jest popularny `boolean`, czy też `Boolean`. Je�
 
 Różnica w zapisie jest jednak istotna. `Boolean` jest obiektem, a `boolean` typem prymitywnym. Największą różnicę pomiędzy nimi znajdziemy w pamięci, które zajmują. Istotną różnicę stanowi fakt, że zmienna `Boolean` przyjmuje trzy wartości - oprócz standardowego `true` i `false`, może mieć także wartość `null`. Niemniej jednak, zmienna prymitywna typu `boolean` zajmuje znacznie mniej miejsca niż jakikolwiek obiekt. Jej dokładny rozmiar nie jest zdefiniowany, ponieważ zależy od maszyny wirtualnej, ale możemy z pewnością stwierdzić, że obiekt będzie zajmować wielokrotnie więcej pamięci.
 
-Z uwagi na to, że zazwyczaj ze zmiennej logicznej korzystamy w prostych celach, korzystanie z obiektu Boolean zazwyczaj jest niepotrzebnym marnowaniem pamięci. Wyjątkiem są sytuacje, gdy chcemy skorzystać z metod klasy Boolean.
+Z uwagi na to, że zazwyczaj ze zmiennej logicznej korzystamy w prostych celach, korzystanie z obiektu `Boolean` zazwyczaj jest niepotrzebnym marnowaniem pamięci. Wyjątkiem są sytuacje, gdy chcemy skorzystać z metod klasy `Boolean`.
 
 
 ## Integer vs int
