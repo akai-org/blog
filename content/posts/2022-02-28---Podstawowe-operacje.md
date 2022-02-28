@@ -1,9 +1,9 @@
 ---
 title: Podstawowe operacje w Javie
-date: "2021-12-10"
+date: "2022-02-28"
 template: "post"
 draft: false
-slug: "/posts/springcourse2/"
+slug: "/posts/springcourse1"
 category: "back-end"
 tags:
 - "Java"
