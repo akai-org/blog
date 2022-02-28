@@ -3,7 +3,7 @@ title: Pułapki w Javie
 date: "2022-02-22"
 template: "post"
 draft: false 
-slug: "/posts/springcourse6/"
+slug: "/posts/springcourse3/"
 category: "dev-ops"
 tags:
 - "Java"
