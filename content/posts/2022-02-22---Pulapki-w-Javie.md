@@ -4,7 +4,7 @@ date: "2022-02-22"
 template: "post"
 draft: false 
 slug: "/posts/springcourse3/"
-category: "dev-ops"
+category: "back-end"
 tags:
 - "Java"
 description: "Pułapki w Javie"
