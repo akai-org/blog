@@ -1,6 +1,6 @@
 ---
 title: Pułapki w Javie
-date: "2022-02-22"
+date: "2022-04-03"
 template: "post"
 draft: false 
 slug: "/posts/springcourse3/"
