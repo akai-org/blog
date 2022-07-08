@@ -50,7 +50,7 @@
     "invariant": "2.2.4",
     "katex": "0.10.0",
     "lodash": "^4.17.15",
-    "moment": "2.23.0",
+    "moment": "2.29.4",
     "netlify-cms": "2.3.3",
     "node-sass": "^4.13.1",
     "normalize-scss": "7.0.1",
